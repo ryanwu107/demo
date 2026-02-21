@@ -23,4 +23,4 @@ jobs:
           # file: docker/Dockerfile       # if the Dockerfile is not in repo root
           push: true
           tags: |
-            docker.io/ryanwu8/demo:1.${{ github.run_number }}
+            docker.io/ryanwu8/demo:1.0.${{ github.run_number }}
