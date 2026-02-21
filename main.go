@@ -9,7 +9,7 @@ func main(){
 
 	s := gin.Default()
 	s.GET("/", func(c *gin.Context){
-		c.JSON(http.StatusOK, "Hello AAAA!")
+		c.JSON(http.StatusOK, "Hello Ryan!")
 	})
 
 	s.Run(":8089")
