@@ -34,4 +34,6 @@ jobs:
           push: true
           tags: |
             docker.io/${{ secrets.DOCKERHUB_USERNAME }}/demo:${{ github.sha }}
-            docker.io/${{ secrets.DOCKERHUB_USERNAME }}/demo:latest
+            #docker.io/${{ secrets.DOCKERHUB_USERNAME }}/demo:latest
+            tags: ${{ steps.meta.outputs.tags }}  # 使用步骤 4 生成的标签
+            labels: ${{ steps.meta.outputs.labels }}  # 附加元数据标签
